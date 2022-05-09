@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Pacifico&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet" />
+    <!--using FontAwesome---------------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- my css -->
+  </head>
+  <body>
+      <nav>
+        <div class="logo">
+          <h4>Rifaldi Akmal Fauzan</h4>
+        </div>
+
+        <ul>
+          <li><a href="#h">Home</a></li>
+          <li><a href="#a">About</a></li>
+          <li><a href="#p">Projects</a></li>
+          <li><a href="#c">Contacts</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+      <section id="h"></section>
+    
+
+       <!--text----------------------->
+       <div class="text-container">
+        <p>Hello,</p>
+        <p>I'm Rifaldi Akmal F</p>
+        <p>Web Developer <br />& Designer</p>
+      </div>
+      <!--model---------------------->
+      <img alt="model" class="model" src="images/model.png" />
+      <div id="a" class="about-container">
+        <!--img-->
+        <img src="images/model.png" />
+        <!--about-me-text-->
+        <div class="about-text">
+          <p>About Me</p>
+          <p>Web Developer & Designer</p>
+          <p>&#8226 Memiliki pengalaman 2 tahun belajar desain grafis dan 1 tahun belajar Web development
+            </p>
+            <p>&#8226
+              Mengikuti event beasiswa <a href="https://www.dicoding.com/">Dicoding</a> pada kelas Belajar Dasar Pemrograman Web 2021
+            </p>
+            <p>&#8226 Dapat mengoperasikan software photoshop,illustrator,Visual studio code.</p>
+            <p>&#8226 Menguasai dasar Html/css,Javascript,Bootstrap </p>
+            <p><i class="bi bi-laptop"></i>Programming/Design   <i class="bi bi-fan"></i>Sport  <i class="bi bi-headphones"></i>Music</P></p>
+            
+        </div>
+      </div>
+
+    <!-- akhir about -->
+
+    <!-- project -->
+    <div id="p" class="services">
+      <!--text-->
+      <div class="services-text">
+        <p>My Project</p>
+      </div>
+      <div class="box-container">
+        <!--1------------->
+        <div class="box-1">
+          <span>1</span>
+          <p class="heading">Website Bandung</p>
+          <button><a href="">View More</a></button>
+        </div>
+        <!--2------------->
+        <div class="box-2">
+          <span>2</span>
+          <p class="heading">Design Multimedia</p>
+          <button><a href="https://www.instagram.com/do_project__/?hl=id">View More</a></button>
+        </div>
+        <!--3------------->
+        <div class="box-3">
+          <span>3</span>
+          <p class="heading">Website lain</p>
+
+          <button><a href="">View More</a></button>
+        </div>
+        
+      </div>
+    </div>
+    <!-- akhir project -->
+    
+
+    <!-- contact me -->
+    <form name="submit-to-google-sheet">
+    <div id="c" class="container-info">
+      <div class="contact-box">
+        <div class="left"></div>
+        <div class="right">
+          <h2>Contact Us</h2>
+          <div class="container-alert">
+            <div class="alert-1">
+              <span><i class="fas fa-check"></i></span>
+              <p><strong>Terima Kasih !</strong> Pesan anda telah kami terima</p>
+            </div>
+          </div>
+          <input name="nama" type="text" class="field" placeholder="Your Name" required/>
+          <input name="email" type="email" class="field" placeholder="Your Email" required />
+          <input name="phone" type="text" class="field" placeholder="Phone" required/>
+          <textarea name="pesan" class="field" placeholder="Message" required></textarea> 
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="button">
+            <span class="button__text">Loading</span>
+          </button>
+  
+      
+        </div>
+      </div>
+    </div>
+  </form>
+
+    <!-- akhir contact me -->
+<footer>
+  <!--heading-->
+  <p>Going-To Internet</p>
+  <!--paragraph-->
+  
+  <!--social-->
+  <div class="social-icons">
+    <a href="https://www.facebook.com/ddo.af/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/rifaldifauzan19/?hl=id" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/RifaldiAkmalFauzan" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+  <!--copyright-->
+  <p class="copyright">Copyright by Rifaldi Akmal Fauzan</p>
+</footer>
+<!--social-attach-bar-->
+<div class="social">
+  <a href="https://www.facebook.com/ddo.af/" target="_blank""><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/rifaldifauzan19/?hl=id" target="_blank""><i class="fab fa-instagram"></i></a>
+  <a href="https://github.com/RifaldiAkmalFauzan" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+
+<!--JQUery-------------------->
+<script src="script.js"></script>
+<script type="text/javascript" src="js/JQuery.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('.toggle').click(function () {
+      $('.toggle').toggleClass('active');
+      $('nav').toggleClass('active');
+    });
+  });
+</script>
+<!-- contact form -->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby4h9mj2snvcXwnOkio6NXvrmd4-wsxo9I6xobVOrI0FihgzJp4n3AlipXmjLPY2gj07w/exec';
+  const form = document.forms['submit-to-google-sheet']
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<!-- loading -->
+<script>
+  const theButton = document.querySelector('.button');
+
+  theButton.addEventListener('click', () => {
+    theButton.classList.add('button--loading');
+  });
+</script>
+  </body>
+</html>
